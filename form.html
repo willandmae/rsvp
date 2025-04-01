@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will & Mae | Wedding Invitation Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Ephesis&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+    background-color: #fed0bb3b;
+    color: #3d0013;
+    font-family: Lora, Arial, sans-serif;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    }
+
+    form {
+    background-color: #fff;
+    width: 50%;
+    margin: auto;
+    margin-top: 200px;
+    padding: 60px 30px 100px 30px;
+    border: 1px solid #fed0bb63;
+    border-radius: 1%;
+    box-shadow: 0px 0px 50px 3px #fed0bb8e;
+    text-align: center;
+    }
+
+    h1 {
+    font-family: Ephesis;
+    font-size: 100px;
+    }
+
+    h1, #invite, #date, #location {
+    text-align: center;
+    }
+
+    span {
+    font-weight: bold;
+    }
+
+    #invite, #date, #location {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    }
+
+    #date-only {
+    font-size:35px;
+    }
+
+    #invited {
+    font-size: 50px;
+    }
+
+    .sm-field__label { /*Option box header*/
+    font-size: 17px;
+    }
+
+    .sm-field--small { /*Option box frame*/
+    margin-bottom: 5%;
+    }
+
+    .sm-choice-select {
+    margin-top: 2%;
+    }
+
+    #sm-field-4itpjCcmKs, #sm-field-Ua1d1TpZgu, #sm-field-4hk0mHWb5Q { /*Dropdown & Field Header*/
+    font-family: Inter, Arial, Calibri;
+    font-size: 14px;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid #80ff00;
+    border-radius: 7px;
+    }
+
+    #sm-field-4itpjCcmKs { /*Dropdown*/
+    width: 60%;
+    text-align: center;
+    }
+
+    #sm-field-Ua1d1TpZgu, #sm-field-4hk0mHWb5Q { /*Field Header*/
+    width: 40%;
+    margin: 5px 10px;
+    }
+
+    .sm-actions__container {
+    margin-top: 5%;
+    }
+
+    button {
+    font-family: Inter, Arial, Calibri;
+    font-size: 13px;
+    background-color: #3d0013;
+    color: #f8e5dc;
+    padding: 13px 50px;
+    border: 1px solid #3d0013;
+    border-radius: 7px;
+    }
+
+    button:hover {
+    background-color: #3d0013da;
+    cursor: pointer;
+    }
+
+    @media screen and (max-width:1500px) {
+    body {
+    }
+
+    form {
+    width: 70%;
+    }
+    }
+
+    @media screen and (max-width:1200px) {
+    body {
+    padding: 0px 30px 0px 30px;
+    }
+
+    form {
+    width: 80%;
+    padding: 30px 0px 80px 0px;
+    }
+    }
+
+    @media screen and (max-width:900px) {
+    body {
+    padding: 0px 30px 0px 30px;
+    }
+
+    form {
+    width: 95%;
+    padding: 30px 0px 70px 0px;
+    }
+
+    h1 {
+    font-size: 85px;
+    }
+
+    h1, #invite, #date, #location {
+    text-align: center;
+    }
+
+    #invite, #date, #location {
+    font-size: 16px;
+    }
+
+    #date-only {
+    font-size: 30px;
+    }
+
+    #invited {
+    font-size: 35px;
+    }
+
+    #sm-field-4itpjCcmKs, #sm-field-Ua1d1TpZgu, #sm-field-4hk0mHWb5Q { /*Dropdown & Field Header*/
+    font-size: 12px;
+    }
+
+    .sm-field__label { /*Option box header*/
+    font-size: 14px;
+    }
+    }
+
+    @media screen and (max-width:600px) {
+    body {
+    padding: 30px 10px 0px 10px;
+    }
+
+    form {
+    width: 100%;
+    padding: 30px 0px 70px 0px;
+    }
+
+    h1 {
+    font-size: 65px;
+    }
+
+    #invite, #date, #location {
+    font-size: 14px;
+    }
+
+    #date-only {
+    font-size: 23px;
+    }
+
+    #invited {
+    font-size: 30px;
+    }
+    }
+
+</style>
+<body>
+    
+    <h1>Wilson Gabriel <br>+<br> Chrizelle Mae</h1>
+    <p id="invite">Request the pleasure of your company to celebrate their wedding day.</p><br>
+    <p id="date"><span id="date-only">07 . June . 2025</span><br>Twelve-Thirty in the Afternoon</p><br>
+    <p id="location"><span>Silangang Nayon Park & Restaurant</span><br>Brgy. Bantigue Pagbilao Quezon PH 4302</p>
+
+
+    <form method="post" action="https://api.sheetmonkey.io/form/dUdWE5x3kUppPLigm3yGGU" autoComplete="on" class="sm__form">
+        <div class="sm__form__fields">
+    
+                <input type="hidden" class="sm-field__input sm-field__input--hidden" id="sm-field-pmBHzoigxW" name="Date" value="x-sheetmonkey-current-date-time"/>
+    
+                <div class="sm-field__wrapper">
+                    <div class="sm-field__wrapper__inside">
+                        <div class="sm-field sm-field--small">
+                            <p id="invited">You are invited!</p>
+                            <label class="sm-field__label" for="sm-field-4itpjCcmKs">Would you join us on our special day?<strong style="color:#ff2600">*</strong></label>
+                            <div class="sm-choice-select">
+                                <select name="Your response to us:" class="sm-field__select" id="sm-field-4itpjCcmKs">
+                                    <option value="RSVP">RSVP</option>
+                                    <option value="Thank you for the invitation, but I am unavailable.">Thank you for the invitation, but I am unavailable.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="sm-field__wrapper">
+                    <div class="sm-field__wrapper__inside">
+                        <div class="sm-field sm-field-text sm-field--medium">
+                            <label class="sm-field__label" for="sm-field-Ua1d1TpZgu">First Name   <strong style="color:#ff2600">*</strong></label>
+                            <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-Ua1d1TpZgu" name="First Name" placeholder="Enter your first name" required=""/>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="sm-field__wrapper">
+                    <div class="sm-field__wrapper__inside">
+                        <div class="sm-field sm-field-text sm-field--medium">
+                            <label class="sm-field__label" for="sm-field-4hk0mHWb5Q">Last Name   <strong style="color:#ff2600">*</strong></label>
+                            <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-4hk0mHWb5Q" name="Last Name" placeholder="Enter your last name" required=""/>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="sm-actions__container">
+                    <button type="submit" class="sm-btn sm-btn--primary">Submit</button>
+                </div>
+    
+    
+        </div>
+    
+    </form>
+</body>
+</html>
