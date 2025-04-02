@@ -12,18 +12,27 @@
 </head>
 <style>
     body {
-    background-color: #fed0bb3b;
-    color: #3d0013;
+    background-color: #5f2727;
     font-family: Lora, Arial, sans-serif;
-    margin-top: 8%;
-    margin-bottom: 10%;
+    
+    }
+
+    .body-container {
+    background-color: #f8efea;
+    color: #3d0013;
+    width: 98%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 0% 0% 10% 0%;
     }
 
     form {
     background-color: #fff;
     width: 50%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 10%;
     padding: 60px 30px 100px 30px;
     border: 1px solid #fed0bb63;
     border-radius: 1%;
@@ -34,6 +43,7 @@
     h1 {
     font-family: Ephesis;
     font-size: 100px;
+    margin-top: 7%;
     }
 
     h1, #invite, #date, #location {
@@ -58,6 +68,17 @@
 
     #invited {
     font-size: 50px;
+    }
+
+    img {
+    width: 100%;
+    }
+
+    #image {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
     }
 
     .sm-field__label { /*Option box header*/
@@ -112,6 +133,7 @@
 
     @media screen and (max-width:1500px) {
     body {
+    background-color: aqua;
     }
 
     form {
@@ -121,7 +143,7 @@
 
     @media screen and (max-width:1200px) {
     body {
-    padding: 0px 30px 0px 30px;
+    background-color: #80ff00;
     }
 
     form {
@@ -132,12 +154,17 @@
 
     @media screen and (max-width:900px) {
     body {
-    padding: 0px 30px 0px 30px;
+    background-color: goldenrod;
+    }
+
+    .body-container {
+    padding: 5% 0% 5% 0%;
     }
 
     form {
     width: 95%;
     padding: 30px 0px 70px 0px;
+    margin-bottom: 10%;
     }
 
     h1 {
@@ -156,6 +183,10 @@
     font-size: 30px;
     }
 
+    #image {
+    width: 100%;
+    }
+
     #invited {
     font-size: 35px;
     }
@@ -171,11 +202,11 @@
 
     @media screen and (max-width:600px) {
     body {
-    padding: 30px 10px 0px 10px;
+    background-color: plum;
     }
 
     form {
-    width: 100%;
+    width: 99%;
     padding: 30px 0px 70px 0px;
     }
 
@@ -199,11 +230,16 @@
 </style>
 <body>
     
+<div class="body-container">
+<br>
     <h1>Wilson Gabriel <br>+<br> Chrizelle Mae</h1>
     <p id="invite">Request the pleasure of your company to celebrate their wedding day.</p><br>
     <p id="date"><span id="date-only">07 . June . 2025</span><br>Twelve-Thirty in the Afternoon</p><br>
     <p id="location"><span>Silangang Nayon Park & Restaurant</span><br>Brgy. Bantigue Pagbilao Quezon PH 4302</p>
 
+    <div id="image">
+        <img src="https://th.bing.com/th/id/R.6a686e5c4b62c5c155a0da182f6607cd?rik=1Eh48MwZ1OcE2Q&riu=http%3a%2f%2ferlinolanphotography.com%2fwp-content%2fuploads%2f2017%2f08%2f21124837_1484323104981884_1354029277_o.jpg&ehk=PBqj7MLYFnZvXv3fu50lCspWRmQAq1TbfYMjvUCI9fQ%3d&risl=&pid=ImgRaw&r=0"/>
+    </div>
 
     <form method="post" action="https://api.sheetmonkey.io/form/dUdWE5x3kUppPLigm3yGGU" autoComplete="on" class="sm__form">
         <div class="sm__form__fields">
@@ -254,5 +290,7 @@
         </div>
     
     </form>
+</div>
+
 </body>
 </html>
